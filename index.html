@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>FitLife Gym - Transform Your Body</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+
+    <img class="logo" src="imgs/logo.png" alt="FitLife Gym Logo">
+
+    <!-- BURGER -->
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- MENU -->
+    <ul class="nav-menu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li class="nav-cta">
+        <a href="registration.html" class="btn-primary">Free Trial</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-container">
+
+    <!-- LEFT -->
+    <div class="hero-left">
+      <span class="hero-eyebrow">WELCOME TO FITLIFE</span>
+
+      <h1>
+        Push Your <br />
+        Limits with Us
+      </h1>
+
+      <p class="hero-text">
+        From beginner to advanced, experience workouts designed to help you
+        achieve peak performance and exceed your fitness goals.
+      </p>
+
+      <div class="hero-actions">
+        <a href="registration.html" class="btn-primary">
+          Join Now →
+        </a>
+
+        <button class="btn-video">
+          <span class="play"><i class="fa-solid fa-play"></i></span>
+          Watch Video
+        </button>
+      </div>
+
+      <!-- REVIEWS -->
+      <div class="hero-reviews">
+        <div class="avatars">
+          <img src="imgs/model-1.png" alt="">
+          <img src="imgs/model-2.png" alt="">
+          <img src="imgs/model-3.png" alt="">
+          <link rel="stylesheet" href="https://maps.app.goo.gl/f38DLdjqMfrcoaN56?g_st=ic" target="_blank"><span class="avatar-plus">+</span></link>
+        </div>
+
+        <div class="review-info">
+          <div class="stars">★★★★★</div>
+          <span>1.7k reviews</span>
+        </div>
+      </div>
+
+      <!-- PILLS -->
+      <div class="hero-pills">
+        <span>Personal Training</span>
+        <span>Strength</span>
+        <span>Group Classes</span>
+        <span>Swimming</span>
+        <span>Cardio Equipment</span>
+        <span>Functional Workouts</span>
+      </div>
+    </div>
+    <div class="hero-right"></div>
+  </div>
+</section>
+
+
+
+    <section class="feature-section">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-image">
+                    <img class="img-fit" src="imgs/model-2.png" alt="">
+                </div>
+                <div class="feature-text">
+                    <h2>State-of-the-Art Equipment</h2>
+                    <p>Experience fitness like never before with our cutting-edge equipment and modern facilities. Our gym features the latest cardio machines, strength training equipment, and functional fitness areas designed to help you reach your goals efficiently and safely.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-section">
+        <div class="container">
+            <h2>Why Choose FitLife?</h2>
+            <p class="section-subtitle">Discover the benefits that set us apart from other gyms</p>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <img class="benefit-icon" src="imgs/trainer.png" alt="">
+                    <h3>Expert Trainers</h3>
+                    <p>Certified professionals ready to guide your fitness journey with personalized attention and proven training methodologies.</p>
+                </div>
+                <div class="benefit-card">
+                    <img class="benefit-icon" src="imgs/hours.png" alt="">
+                    <h3>24/7 Access</h3>
+                    <p>Work out on your schedule with round-the-clock gym access. No restrictions, just results.</p>
+                </div>
+                <div class="benefit-card">
+                    <img class="benefit-icon" src="imgs/workout.png" alt="">
+                    <h3>Personalized Plans</h3>
+                    <p>Custom workout programs tailored to your specific goals, fitness level, and lifestyle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+            <h2>Our Facility</h2>
+            <p class="section-subtitle">Experience premium fitness in a state-of-the-art environment</p>
+            
+            <div class="slider-container">
+                <div class="slider-wrapper" id="facilitySlider">
+                    <div class="slider-slide active">
+                        <img class="gallery-placeholder" src="imgs/training-area.png" alt="">
+                        <div class="slide-caption">Weight Training Area</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img class="gallery-placeholder" src="imgs/cardio-zone.png" alt="">
+                        <div class="slide-caption">Cardio Zone</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img class="gallery-placeholder" src="imgs/Group Class Studio.png" alt="">
+                        <div class="slide-caption">Group Class Studio</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img class="gallery-placeholder" src="imgs/Functional-Training.png" alt="">
+                        <div class="slide-caption">Functional Training</div>
+                    </div>
+                    <div class="slider-slide">
+                        <img class="gallery-placeholder" src="imgs/Spa-&-Recovery.png" alt="">
+                        <div class="slide-caption">Spa & Recovery</div>
+                    </div>
+                </div>
+                
+                <button class="slider-btn slider-prev" id="sliderPrev">‹</button>
+                <button class="slider-btn slider-next" id="sliderNext">›</button>
+                
+                <div class="slider-dots" id="sliderDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform?</h2>
+            <p>Start your fitness journey today with our flexible membership plans</p>
+            <div class="cta-buttons">
+                <button class="btn-cta" onclick="window.location.href='registration.html'">Join Now</button>
+                <button class="btn-cta" onclick="window.location.href='about.html'">Learn More</button>
+                <button class="btn-cta">Schedule Tour</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>⚡ FitLife Gym</h4>
+                    <p>Your fitness journey starts here. Transform your body, transform your life.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="registration.html">Register</a></li>
+                        <li><a href="#">Classes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <p>📧 info@fitlifegym.com</p>
+                    <p>📞 (555) 555-4567</p>
+                    <p>📍 123 Fitness Street, Gym City</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Hours</h4>
+                    <p>Mon-Fri: 24/7</p>
+                    <p>Sat-Sun: 24/7</p>
+                    <p>Always Open!</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FitLife Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

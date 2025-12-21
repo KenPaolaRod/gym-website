@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Registration - FitLife Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-container">
+
+    <img class="logo" src="imgs/logo.png" alt="FitLife Gym Logo">
+
+    <!-- BURGER -->
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- MENU -->
+    <ul class="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="registration.html" class="active">Registration</a></li>
+      <li class="nav-cta">
+        <a href="registration.html" class="btn-primary">Free Trial</a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+    <section class="about-header">
+        <div class="container">
+            <p class="subtitle subtitle-orange">Start Your Journey</p>
+            <h1>Membership Registration</h1>
+            <p class="section-subtitle registration-subtitle">Take the first step towards a healthier you. Join our fitness family today and receive expert guidance tailored to your goals.</p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <div class="form-badge">Membership Form</div>
+                    <h2 class="form-title">Join FitLife Today</h2>
+                </div>
+                
+                <div id="successMessage" class="success-message">✓ Registration successful! Welcome to FitLife Gym. We'll contact you within 24 hours.</div>
+
+                <form id="registrationForm" novalidate>
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                        <span class="error-message">Please enter your full name</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com">
+                        <span class="error-message">Please enter a valid email</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                        <span class="error-message">Please enter a valid phone number</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="membership">Membership Type *</label>
+                        <select id="membership" name="membership">
+                            <option value="">-- Select a membership plan --</option>
+                            <option value="basic">Basic - $29/month (Gym Access)</option>
+                            <option value="standard">Standard - $49/month (Gym + Classes)</option>
+                            <option value="premium">Premium - $79/month (Gym + Classes + PT)</option>
+                            <option value="vip">VIP - $129/month (All Access + Nutrition)</option>
+                        </select>
+                        <span class="error-message">Please select a membership type</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="goals">Fitness Goals *</label>
+                        <textarea id="goals" name="goals" placeholder="Tell us about your fitness goals..." rows="4"></textarea>
+                        <span class="error-message">Please describe your fitness goals</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Age *</label>
+                        <input type="number" id="age" name="age" placeholder="Enter your age" min="16" max="100">
+                        <span class="error-message">Please enter a valid age (16-100)</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emergencyContact">Emergency Contact Name *</label>
+                        <input type="text" id="emergencyContact" name="emergencyContact" placeholder="Enter emergency contact name">
+                        <span class="error-message">Please provide an emergency contact</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Fitness Experience Level *</label>
+                        <select id="experience" name="experience">
+                            <option value="">-- Select your experience level --</option>
+                            <option value="beginner">Beginner - New to fitness</option>
+                            <option value="intermediate">Intermediate - Some experience (1-2 years)</option>
+                            <option value="advanced">Advanced - Regular gym-goer (3+ years)</option>
+                            <option value="expert">Expert - Competitive athlete</option>
+                        </select>
+                        <span class="error-message">Please select your experience level</span>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-submit">Complete Registration →</button>
+
+                    <p class="form-footer">* All fields are required | <a href="#" class="form-link">Privacy Policy</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-section">
+        <div class="container">
+            <h2>What Happens Next?</h2>
+            <p class="section-subtitle">Your journey to fitness starts with these simple steps</p>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="step-number">1</div>
+                    <h3>Confirmation Email</h3>
+                    <p>You'll receive a confirmation email within 24 hours with your membership details and access credentials.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="step-number">2</div>
+                    <h3>Free Orientation</h3>
+                    <p>Schedule a complimentary orientation session with one of our expert trainers to create your personalized fitness plan.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="step-number">3</div>
+                    <h3>Start Training</h3>
+                    <p>Begin your fitness journey with full access to all our facilities, classes, equipment, and expert guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <div class="container">
+            <h2 class="benefits-main-title">Membership Benefits</h2>
+            <p class="section-subtitle benefits-subtitle">Everything you get as a FitLife member</p>
+            
+            <div class="benefits-features-grid">
+                <div class="benefit-feature">
+                    <div class="benefit-check">✓</div>
+                    <h3 class="benefit-feature-title">24/7 Access</h3>
+                    <p class="benefit-feature-text">Workout anytime that fits your schedule</p>
+                </div>
+                <div class="benefit-feature">
+                    <div class="benefit-check">✓</div>
+                    <h3 class="benefit-feature-title">Expert Trainers</h3>
+                    <p class="benefit-feature-text">Certified professionals at your service</p>
+                </div>
+                <div class="benefit-feature">
+                    <div class="benefit-check">✓</div>
+                    <h3 class="benefit-feature-title">Group Classes</h3>
+                    <p class="benefit-feature-text">50+ classes per week included</p>
+                </div>
+                <div class="benefit-feature">
+                    <div class="benefit-check">✓</div>
+                    <h3 class="benefit-feature-title">Modern Equipment</h3>
+                    <p class="benefit-feature-text">Latest cardio and strength machines</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Have Questions?</h2>
+            <p>Our team is here to help you make the right choice</p>
+            <div class="cta-buttons">
+                <button class="btn-cta">📞 Call Us Now</button>
+                <button class="btn-cta">📧 Email Support</button>
+                <button class="btn-cta">💬 Live Chat</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>⚡ FitLife Gym</h4>
+                    <p>Your fitness journey starts here. Transform your body, transform your life.</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="registration.html">Register</a></li>
+                        <li><a href="#">Classes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <p>📧 info@fitlifegym.com</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>📍 123 Fitness Street, Gym City</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Hours</h4>
+                    <p>Mon-Fri: 24/7</p>
+                    <p>Sat-Sun: 24/7</p>
+                    <p>Always Open!</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FitLife Gym. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
